@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message Student {
+    string name = 1;
+    string studentId = 2;
+
+    enum Department {
+        COMPUTER_SCIENCE = 0;
+        ELECTRICAL_ENGINEERING = 1;
+    }
+
+    Department dept = 3;
+}
+
+message StudentList {
+    repeated Student student = 1;
+}
